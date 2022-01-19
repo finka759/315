@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Spring Security Example</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid  text-nav" id="navbarInfo">
+
+        </div>
+    </nav>
+</header>
+<body class="vh-100">
+<main class="row h-100">
+    <div class="p-0 col-2 h-100">
+        <div class="nav flex-column nav-pills pt-4" aria-orientation="vertical">
+            <a class="nav-link active" data-toggle="tab" href="#user-information-page"
+               aria-controls="v-pills-profile" aria-selected="false">User</a>
+        </div>
+    </div>
+    <div class="p-0 col-10 bg-light h-100">
+        <div class="tab-content container-fluid" id="pills-Content">
+
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1">
+                <h1>User information-pade</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-header">About user</div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Role</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<script type="text/javascript" th:src="@{js/user.js}" src="../Static/js/user.js"></script>
+</body>
+</html>
